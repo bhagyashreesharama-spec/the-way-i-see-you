@@ -1,1 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Way I See You</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND WORLD
+    ========================== -->
+
+    <div class="world-bg">
+        <div class="moon">
+            <div class="moon-glow"></div>
+            <div class="moon-body"></div>
+        </div>
+
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="cloud cloud-three"></div>
+
+        <div class="stars">
+            <span class="star s1"></span>
+            <span class="star s2"></span>
+            <span class="star s3"></span>
+            <span class="star s4"></span>
+            <span class="star s5"></span>
+            <span class="star s6"></span>
+            <span class="star s7"></span>
+            <span class="star s8"></span>
+            <span class="star s9"></span>
+            <span class="star s10"></span>
+            <span class="star s11"></span>
+            <span class="star s12"></span>
+        </div>
+
+        <div class="sparkle-layer" id="sparkleLayer"></div>
+    </div>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <main>
+
+        <section class="intro-screen" id="introScreen">
+
+            <div class="intro-content">
+
+                <div class="teddy-scene">
+                    <div class="teddy-shadow"></div>
+
+                    <div class="teddy">
+                        <div class="ear left-ear"></div>
+                        <div class="ear right-ear"></div>
+
+                        <div class="head">
+                            <div class="eye left-eye"></div>
+                            <div class="eye right-eye"></div>
+
+                            <div class="nose"></div>
+
+                            <div class="mouth">
+                                <span></span>
+                            </div>
+
+                            <div class="blush left-blush"></div>
+                            <div class="blush right-blush"></div>
+                        </div>
+
+                        <div class="body">
+                            <div class="belly"></div>
+                            <div class="arm left-arm"></div>
+                            <div class="arm right-arm"></div>
+                        </div>
+
+                        <div class="leg left-leg"></div>
+                        <div class="leg right-leg"></div>
+                    </div>
+
+                    <div class="bow">
+                        <span class="bow-left"></span>
+                        <span class="bow-center"></span>
+                        <span class="bow-right"></span>
+                    </div>
+
+                    <div class="envelope-intro">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-paper">
+                            <span>for you</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="intro-small">a little something</p>
+
+                <h1 class="intro-title">
+                    There is a person...
+                </h1>
+
+                <p class="intro-line">
+                    who became a little more important<br>
+                    than I ever expected.
+                </p>
+
+                <button class="enter-button" id="enterButton">
+                    <span>untie the bow</span>
+                    <i></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAIN WORLD
+        ========================== -->
+
+        <section class="main-world hidden" id="mainWorld">
+
+            <!-- HERO -->
+            <section class="hero-section section">
+
+                <div class="hero-decoration">
+                    <div class="floating-bow"></div>
+                    <div class="tiny-star star-a"></div>
+                    <div class="tiny-star star-b"></div>
+                    <div class="tiny-star star-c"></div>
+                </div>
+
+                <p class="eyebrow">a little world, made with a lot of thought</p>
+
+                <h2>
+                    The Way
+                    <span>I See You</span>
+                </h2>
+
+                <p class="hero-description">
+                    Not who the world sees.<br>
+                    Just the person I get to see.
+                </p>
+
+                <div class="scroll-hint">
+                    <span>scroll slowly</span>
+                    <div class="scroll-line"></div>
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 PERSONALITY CONSTELLATION
+            ========================== -->
+
+            <section class="section constellation-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">01 / the person</p>
+                    <h3>Who You Are</h3>
+                    <p>
+                        There are certain things about you<br>
+                        that I hope you never stop being.
+                    </p>
+                </div>
+
+                <div class="constellation">
+
+                    <div class="constellation-center">
+                        <div class="center-orbit"></div>
+                        <div class="center-dot"></div>
+                        <span>you</span>
+                    </div>
+
+                    <button class="constellation-star star-kind" data-message="You have a kindness that doesn't always announce itself. It's simply there.">
+                        <span></span>
+                        <strong>kind</strong>
+                    </button>
+
+                    <button class="constellation-star star-calm" data-message="There is something about your presence that makes things feel a little less heavy.">
+                        <span></span>
+                        <strong>calm</strong>
+                    </button>
+
+                    <button class="constellation-star star-funny" data-message="You can make an ordinary conversation feel like something I'll remember later.">
+                        <span></span>
+                        <strong>funny</strong>
+                    </button>
+
+                    <button class="constellation-star star-caring" data-message="You care in little ways. The kind of ways people sometimes don't notice immediately.">
+                        <span></span>
+                        <strong>caring</strong>
+                    </button>
+
+                    <button class="constellation-star star-mind" data-message="I genuinely admire the way your mind works and the way you look at things.">
+                        <span></span>
+                        <strong>your mind</strong>
+                    </button>
+
+                    <button class="constellation-star star-patient" data-message="You have a patience that makes it easier to be myself around you.">
+                        <span></span>
+                        <strong>patient</strong>
+                    </button>
+
+                </div>
+
+                <div class="constellation-message" id="constellationMessage">
+                    <span>click a star</span>
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 LITTLE DETAILS
+            ========================== -->
+
+            <section class="section details-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">02 / the little things</p>
+                    <h3>Things I Notice</h3>
+                    <p>
+                        Maybe you don't think twice about them.<br>
+                        I do.
+                    </p>
+                </div>
+
+
+                <div class="detail-world">
+
+                    <div class="detail-orbit orbit-one"></div>
+                    <div class="detail-orbit orbit-two"></div>
+
+                    <button class="detail-card eyes-card" data-detail="eyes">
+                        <div class="illustration eye-illustration">
+                            <span class="eye-shape"></span>
+                            <span class="eye-shape"></span>
+                        </div>
+                        <span>your eyes</span>
+                    </button>
+
+                    <button class="detail-card smile-card" data-detail="smile">
+                        <div class="illustration smile-illustration">
+                            <span></span>
+                        </div>
+                        <span>your smile</span>
+                    </button>
+
+                    <button class="detail-card dimple-card" data-detail="dimple">
+                        <div class="illustration dimple-illustration">
+                            <span></span>
+                        </div>
+                        <span>that dimple</span>
+                    </button>
+
+                    <button class="detail-card voice-card" data-detail="voice">
+                        <div class="illustration voice-illustration">
+                            <div class="sound-wave"></div>
+                            <div class="sound-wave"></div>
+                            <div class="sound-wave"></div>
+                            <div class="sound-wave"></div>
+                        </div>
+                        <span>your voice</span>
+                    </button>
+
+                    <button class="detail-card look-card" data-detail="look">
+                        <div class="illustration look-illustration">
+                            <div></div>
+                        </div>
+                        <span>that look</span>
+                    </button>
+
+                </div>
+
+                <div class="detail-reveal" id="detailReveal">
+                    <button class="close-detail" id="closeDetail">×</button>
+
+                    <p class="detail-label" id="detailLabel"></p>
+
+                    <h4 id="detailTitle"></h4>
+
+                    <p id="detailText"></p>
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 MEMORY CARDS
+            ========================== -->
+
+            <section class="section memories-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">03 / little moments</p>
+                    <h3>Things I Keep</h3>
+                    <p>
+                        Not every memory needs a photograph.
+                    </p>
+                </div>
+
+                <div class="memory-table">
+
+                    <div class="memory-card card-one">
+                        <div class="paper-pin"></div>
+                        <span class="memory-number">01</span>
+                        <h4>the random conversations</h4>
+                        <p>
+                            The ones that started as nothing
+                            and somehow became my favourite part
+                            of the day.
+                        </p>
+                        <span class="paper-line"></span>
+                    </div>
+
+                    <div class="memory-card card-two">
+                        <div class="paper-pin"></div>
+                        <span class="memory-number">02</span>
+                        <h4>the little laughs</h4>
+                        <p>
+                            The kind that stay in my head
+                            long after the conversation ends.
+                        </p>
+                        <span class="paper-line"></span>
+                    </div>
+
+                    <div class="memory-card card-three">
+                        <div class="paper-pin"></div>
+                        <span class="memory-number">03</span>
+                        <h4>the ordinary days</h4>
+                        <p>
+                            Somehow, they don't feel quite
+                            as ordinary when you're part of them.
+                        </p>
+                        <span class="paper-line"></span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 WHAT YOU ARE TO ME
+            ========================== -->
+
+            <section class="section meaning-section">
+
+                <div class="meaning-moon"></div>
+
+                <div class="section-heading">
+                    <p class="eyebrow">04 / your place</p>
+                    <h3>What You Are To Me</h3>
+                </div>
+
+                <div class="meaning-reveal">
+
+                    <div class="meaning-word word-one">comfort.</div>
+                    <div class="meaning-word word-two">trust.</div>
+                    <div class="meaning-word word-three">my favourite person.</div>
+                    <div class="meaning-word word-four">someone I look for.</div>
+                    <div class="meaning-word word-five">a familiar kind of peace.</div>
+
+                </div>
+
+                <p class="meaning-final">
+                    Someone who became a part of my everyday life<br>
+                    without even trying.
+                </p>
+
+            </section>
+
+
+            <!-- =========================
+                 GIFT BOX
+            ========================== -->
+
+            <section class="section gift-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">05 / a little gift</p>
+                    <h3>Things I Love About You</h3>
+                    <p>
+                        Open it. I promise it's not anything complicated.
+                    </p>
+                </div>
+
+                <div class="gift-area">
+
+                    <button class="gift-box" id="giftBox">
+
+                        <div class="gift-lid">
+                            <span class="gift-ribbon"></span>
+                        </div>
+
+                        <div class="gift-body">
+                            <span class="gift-ribbon vertical"></span>
+                        </div>
+
+                    </button>
+
+                    <div class="gift-message" id="giftMessage">
+
+                        <div class="gift-paper">
+
+                            <button class="close-gift" id="closeGift">×</button>
+
+                            <p class="paper-label">things I love</p>
+
+                            <ul>
+                                <li>the way you care</li>
+                                <li>the way you listen</li>
+                                <li>your little expressions</li>
+                                <li>your sense of humour</li>
+                                <li>the way you make things feel easy</li>
+                                <li>and all the things I haven't written here</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 LETTER
+            ========================== -->
+
+            <section class="section letter-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">06 / one last thing</p>
+                    <h3>A Letter</h3>
+                    <p>
+                        Some things are easier to write than say.
+                    </p>
+                </div>
+
+                <div class="letter-area">
+
+                    <button class="letter-envelope" id="letterEnvelope">
+
+                        <div class="envelope-back"></div>
+
+                        <div class="letter-inside">
+                            <p>
+                                I wanted to tell you
+                                something...
+                            </p>
+                        </div>
+
+                        <div class="envelope-front"></div>
+                        <div class="envelope-flap"></div>
+
+                        <span class="wax-seal"></span>
+
+                    </button>
+
+
+                    <div class="letter-modal" id="letterModal">
+
+                        <div class="letter-paper">
+
+                            <button class="close-letter" id="closeLetter">×</button>
+
+                            <p class="letter-date">a little note</p>
+
+                            <h4>To the person this little world is for.</h4>
+
+                            <p>
+                                I don't really know how to put everything
+                                into words.
+                            </p>
+
+                            <p>
+                                Maybe that's why I made this instead.
+                            </p>
+
+                            <p>
+                                There are so many little things about you
+                                that I notice, remember, and quietly adore.
+                                Things you probably don't even realise
+                                matter to me.
+                            </p>
+
+                            <p>
+                                I hope you always know that your presence
+                                means more than you think it does.
+                            </p>
+
+                            <p>
+                                And if you ever wonder how I see you...
+                                maybe this little world is the closest
+                                answer I could give.
+                            </p>
+
+                            <div class="signature">
+                                from someone who notices the little things
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 FINAL
+            ========================== -->
+
+            <section class="section final-section">
+
+                <div class="final-stars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="final-moon"></div>
+
+                <p class="final-line">
+                    I could keep adding things forever...
+                </p>
+
+                <h3>
+                    But then this little world<br>
+                    would never end.
+                </h3>
+
+                <p class="final-small">
+                    So I'll just leave it here.
+                </p>
+
+                <div class="final-teddy">
+                    <div class="mini-teddy-head">
+                        <span class="mini-ear left"></span>
+                        <span class="mini-ear right"></span>
+                        <span class="mini-eye left"></span>
+                        <span class="mini-eye right"></span>
+                        <span class="mini-nose"></span>
+                    </div>
+                    <div class="mini-teddy-body"></div>
+                </div>
+
+                <button class="restart-button" id="restartButton">
+                    begin again
+                </button>
+
+                <button class="secret-star" id="secretStar">
+                    <span></span>
+                </button>
+
+                <div class="secret-message" id="secretMessage">
+                    <div class="secret-card">
+                        <button id="closeSecret">×</button>
+                        <p>you found it.</p>
+                        <h4>
+                            I made all of this<br>
+                            because you matter to me.
+                        </h4>
+                        <span>— and that's really all.</span>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
